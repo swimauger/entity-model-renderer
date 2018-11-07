@@ -1,0 +1,37 @@
+body {
+  background-color: steelblue;
+}
+
+h1 {
+  font-family: Futura;
+  color: white;
+}
+
+nav {
+  margin-bottom: 10;
+}
+
+.nav_bar {
+  font-size: 24;
+  margin-left: 10;
+  font-family: Futura;
+  background-color: white;
+  color: steelblue;
+  border: none;
+  border-radius: 5px;
+  padding: 3;
+  text-align: center;
+}
+
+.nav_bar:active {
+  opacity: 0.5;
+}
+
+input {
+  width: 50px;
+  text-align: center;
+}
+
+canvas {
+  background-color: white;
+}

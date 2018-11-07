@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <title>Entity Modeler</title>
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <h1>Entity Modeler</h1>
+    <nav>
+      <button onclick="createJava()" class="nav_bar" id="File">Export</button>
+      <button class="nav_bar" id="addBlock" onclick="createBlock()">Add Block</button>
+      <select class="nav_bar" id="blockList"></select>
+      <input class="nav_bar" type="number" placeholder="L" id="length" onchange="scaleBlock(this)"></input>
+      <input class="nav_bar" type="number" placeholder="W" id="width" onchange="scaleBlock(this)"></input>
+      <input class="nav_bar" type="number" placeholder="H" id="height" onchange="scaleBlock(this)"></input>
+      <input class="nav_bar" type="number" placeholder="X" id="posX" onchange="changePos(this)"></input>
+      <input class="nav_bar" type="number" placeholder="Y" id="posY" onchange="changePos(this)"></input>
+      <input class="nav_bar" type="number" placeholder="Z" id="posZ" onchange="changePos(this)"></input>
+      <a class="nav_bar" id="texturePage">Add Texture</a>
+    </nav>
+    <canvas id="mainCanvas"></canvas>
+    <script src="./node_modules/three/build/three.js"></script>
+    <script src="./node_modules/three/src/core/EventDispatcher.js"></script>
+    <script src="./node_modules/three/examples/js/controls/OrbitControls.js"></script>
+    <script src="./node_modules/file-saver/FileSaver.js"></script>
+    <script src="./block.js"></script>
+    <script src="./renderer.js"></script>
+    <script src="./camera.js"></script>
+    <script src="./export.js"></script>
+  </body>
+</html>
